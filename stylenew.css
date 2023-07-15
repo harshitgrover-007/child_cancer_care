@@ -187,6 +187,7 @@ nav ul li a:hover::after {
 .section2 {
     margin-top: 140px;
     background-color: white;
+    padding-bottom: 100px;
 }
 
 .main {
@@ -217,7 +218,77 @@ nav ul li a:hover::after {
 }
 
 .lefticon {
-    margin-left: 980px;
+    margin-left: 1170px;
     font-size: 17px;
     font-weight: bold;
+    margin-top: -85px;
 }
+
+.lefttop {
+    margin-left: 1170px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 35px;
+}
+
+.play {
+    padding-top: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 230px;
+    width: 70%;
+    height: 670px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transform-origin: center;
+    pointer-events: none;
+  }
+  
+  .text {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  
+  .char {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    transition: transform 0.5s;
+  }
+  
+  .rotate-animation {
+    animation: rotate 10s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
