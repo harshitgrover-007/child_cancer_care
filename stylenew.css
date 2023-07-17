@@ -1,41 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-transform: capitalize;
-  transition: all .2s ease-out;
-  text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
 }
 
 ::-webkit-scrollbar {
     width: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: #f4f4f4; 
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #c0c0c0; 
-    border-radius: 4px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #a0a0a0;
-  }
-  
-  ::-webkit-scrollbar-button {
-    display: none;
-  }
-  
-  ::-webkit-scrollbar-corner {
+}
+
+::-webkit-scrollbar-track {
     background-color: #f4f4f4;
-  }
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a0a0a0;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #f4f4f4;
+}
 
 
 html {
@@ -44,8 +44,92 @@ html {
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
-  }
-  
+}
+
+.popup{
+    background-color: #ffffff;
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+
+.popup{
+    background-color: #ff5d8f;
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+    color: white;
+}
+.popup .opp{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.sub {
+    font-size: 19px;
+}
+
+.intbtn {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 18px;
+    border-radius: 50px;
+    margin-top: -59px;
+    position: absolute;
+    margin-left: 105px;
+}
+
+.intbtn:hover {
+    color: black;
+    background-color: lightskyblue;
+}
+
+.int {
+    margin-left: -17px;
+    font-size: 20px;
+    text-transform: lowercase;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 21px;
+    width: 400px;
+}
+
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
 
 .section {
     background: #4db1b3;
@@ -59,11 +143,11 @@ html {
 }
 
 nav {
-  margin-top: -55px;
-  text-align: center;
-  font-size: 15px;
-  position: relative;
-  top: -20px
+    margin-top: -55px;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    top: -20px
 }
 
 nav ul {
@@ -107,9 +191,11 @@ nav ul li a:hover::after {
     0% {
         box-shadow: 0 0 5px white;
     }
+
     50% {
         box-shadow: 0 0 20px white;
     }
+
     100% {
         box-shadow: 0 0 5px white;
     }
@@ -180,7 +266,7 @@ nav ul li a:hover::after {
 
 .boy {
     margin-left: 660px;
-    margin-top: -440px;
+    margin-top: -240px;
     width: 80rem;
 }
 
@@ -191,30 +277,34 @@ nav ul li a:hover::after {
     z-index: -1;
 }
 
+/* Section-2 */
 .main {
     font-size: 74px;
-    margin-top: 120px;
-    margin-left: -24px;
 }
 
 .titleh1 {
-    margin-top: -25px;
-    margin-left: 105px;
     font-size: 56px;
     color: black;
 }
 
 .titlep {
-    margin-left: 90rem;
-    margin-top: -230px;
-    font-size: 19px;
+    text-align: center;
+    margin: 22px auto;
+    margin-top: 40px;
+    font-size: 25px;
     color: grey;
 }
 
+.s2-container {
+    display: flex;
+    padding: 0 25%;
+    justify-content: center;
+    width: 100%;
+}
+
 .icon {
-    margin-left: 900px;
-    margin-top: 40px;
-    font-size: 17px;
+    padding: 16px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -233,16 +323,8 @@ nav ul li a:hover::after {
 }
 
 .play {
-    padding-top: 100px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 230px;
+    margin: auto;
     width: 70%;
-    height: 670px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
 }
 
 .sectionsec {
@@ -251,7 +333,7 @@ nav ul li a:hover::after {
     flex-direction: column;
     align-items: center;
     min-height: 400px;
-    padding: 100px 20vw; 
+    padding: 100px 20vw;
     padding-top: -50vw;
     padding-block: 5rem;
     z-index: 1;
@@ -268,7 +350,6 @@ nav ul li a:hover::after {
 }
 
 .diagonal::after {
-    padding-bottom: 620px;
     content: '';
     background: #12c2e9;
     position: absolute;
@@ -285,7 +366,7 @@ nav ul li a:hover::after {
     justify-content: center;
     align-items: center;
     padding-block: 20px;
-} 
+}
 
 .desc {
     color: white;
@@ -423,4 +504,42 @@ nav ul li a:hover::after {
 
 .is {
     width: 200px;
+    margin-left: -120px;
+}
+
+.shape {
+    width: 500px;
+    height: 500px;
+    background-color: #23c55e;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    transform: rotate(-45deg);
+    float: left;
+    margin-top: -324px;
+    margin-left: 904px;
+    border: 5px solid #fff;
+    transform: rotateX(180deg);
+}
+
+.spex {
+        width: 418px;
+        margin-top: -427px;
+        margin-left: 960px;
+        position: relative;
+        z-index: 1;
+}
+
+.lightgreen {
+    margin-top: -449px;
+    height: 25px;
+    width: 25px;
+    margin-left: 842px;
+    background-color: #23c55e;
+}
+
+.footer {
+    padding-top: 20px;
+    height: 200px;
+    margin-top: 320px;
+    background-color: #a449ff;
 }
