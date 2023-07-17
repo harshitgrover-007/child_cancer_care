@@ -538,8 +538,128 @@ nav ul li a:hover::after {
 }
 
 .footer {
-    padding-top: 20px;
     height: 200px;
     margin-top: 320px;
     background-color: #a449ff;
+}
+
+.comp {
+    color: grey;
+    font-size: 13px;
+    margin-left: 122px;
+    padding-top: 10px;
+}
+
+.custom-shape-divider-bottom-1689575378 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-bottom: -2730px;
+}
+
+.custom-shape-divider-bottom-1689575378 svg {
+    position: relative;
+    display: block;
+    width: calc(137% + 1.3px);
+    height: 133px;
+}
+
+.custom-shape-divider-bottom-1689575378 .shape-fill {
+    fill: #A449FF;
+}
+
+
+.kid {
+    color: white;
+    margin-top: -10px;
+    z-index: 9;
+}
+
+.ksjdc {
+    margin-top: -160px;
+    color: white;
+    margin-left: 164px;
+    font-size: 40px;
+}
+
+.ds {
+    color: white;
+    margin-left: 164px;
+    font-size: 15px;
+}
+
+.ndv {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: -30px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 12px;
+}
+
+.fmnv {
+    color: white;
+}
+
+.guc {
+    list-style-type: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    white-space: nowrap;
+}
+
+.den {
+    margin-top: -17px;
+    margin-left: 1300px;
+    width: 200px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+    .intro {
+        font-size: 45px;
+    }
+    
+    .child {
+        font-size: 24px;
+    }
+    
+    .join {
+        padding: 18px 40px;
+        font-size: 16px;
+    }
+    
+    .boy {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .intro {
+        font-size: 60px;
+    }
+    
+    .child {
+        font-size: 28px;
+    }
+    
+    .join {
+        padding: 20px 45px;
+        font-size: 18px;
+    }
+    
+    .boy {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
 }
