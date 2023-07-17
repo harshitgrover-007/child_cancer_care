@@ -1,41 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-transform: capitalize;
-  transition: all .2s ease-out;
-  text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
 }
 
 ::-webkit-scrollbar {
     width: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: #f4f4f4; 
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #c0c0c0; 
-    border-radius: 4px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #a0a0a0;
-  }
-  
-  ::-webkit-scrollbar-button {
-    display: none;
-  }
-  
-  ::-webkit-scrollbar-corner {
+}
+
+::-webkit-scrollbar-track {
     background-color: #f4f4f4;
-  }
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a0a0a0;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #f4f4f4;
+}
 
 
 html {
@@ -44,8 +44,8 @@ html {
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
-  }
-  
+}
+
 
 .section {
     background: #4db1b3;
@@ -59,11 +59,11 @@ html {
 }
 
 nav {
-  margin-top: -55px;
-  text-align: center;
-  font-size: 15px;
-  position: relative;
-  top: -20px
+    margin-top: -55px;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    top: -20px
 }
 
 nav ul {
@@ -107,9 +107,11 @@ nav ul li a:hover::after {
     0% {
         box-shadow: 0 0 5px white;
     }
+
     50% {
         box-shadow: 0 0 20px white;
     }
+
     100% {
         box-shadow: 0 0 5px white;
     }
@@ -180,7 +182,7 @@ nav ul li a:hover::after {
 
 .boy {
     margin-left: 660px;
-    margin-top: -440px;
+    margin-top: -240px;
     width: 80rem;
 }
 
@@ -191,30 +193,34 @@ nav ul li a:hover::after {
     z-index: -1;
 }
 
+/* Section-2 */
 .main {
     font-size: 74px;
-    margin-top: 120px;
-    margin-left: -24px;
 }
 
 .titleh1 {
-    margin-top: -25px;
-    margin-left: 105px;
     font-size: 56px;
     color: black;
 }
 
 .titlep {
-    margin-left: 90rem;
-    margin-top: -230px;
-    font-size: 19px;
+    text-align: center;
+    margin: 22px auto;
+    margin-top: 40px;
+    font-size: 25px;
     color: grey;
 }
 
+.s2-container {
+    display: flex;
+    padding: 0 25%;
+    justify-content: center;
+    width: 100%;
+}
+
 .icon {
-    margin-left: 900px;
-    margin-top: 40px;
-    font-size: 17px;
+    padding: 16px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -233,16 +239,8 @@ nav ul li a:hover::after {
 }
 
 .play {
-    padding-top: 100px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 230px;
+    margin: auto;
     width: 70%;
-    height: 670px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
 }
 
 .sectionsec {
@@ -251,7 +249,7 @@ nav ul li a:hover::after {
     flex-direction: column;
     align-items: center;
     min-height: 400px;
-    padding: 100px 20vw; 
+    padding: 100px 20vw;
     padding-top: -50vw;
     padding-block: 5rem;
     z-index: 1;
@@ -268,7 +266,6 @@ nav ul li a:hover::after {
 }
 
 .diagonal::after {
-    padding-bottom: 620px;
     content: '';
     background: #12c2e9;
     position: absolute;
@@ -285,7 +282,7 @@ nav ul li a:hover::after {
     justify-content: center;
     align-items: center;
     padding-block: 20px;
-} 
+}
 
 .desc {
     color: white;
@@ -297,21 +294,26 @@ nav ul li a:hover::after {
 
 
 
-  .boxes {
+.boxes {
+    margin-top: 60px;
+    margin-left: 20px;
     width: 100%;
-    
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
 
 .box {
-    display: inline-block;
-    width: 60%; 
-    height: 223px;
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 123px;
     font-size: 2em;
     padding: 0.5em;
     line-height: 1;
-    background-position:  0 0, 0 0, 100% 0, 0 100%;
-    background-size: 3px 100%, 100% 3px, 3px 100% , 100% 3px;
+    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
     background-repeat: no-repeat;
 }
 
@@ -320,107 +322,22 @@ nav ul li a:hover::after {
     --AnimationLength: 0px;
 }
 
-.boxss {
-    margin-left: -751px;
-    margin-top: 60px;
-    margin-left: 20px;
-}
-
 .box-h {
-    white-space: normal;
-    display: flex;
-    margin-left: -400px;
-    flex-direction: column; 
-    align-items: center; 
     background-image:
-        repeating-linear-gradient(0deg, var(--clr-border), var(--clr-border) 10px, transparent 10px, transparent 20px), 
+        repeating-linear-gradient(0deg, var(--clr-border), var(--clr-border) 10px, transparent 10px, transparent 20px),
         repeating-linear-gradient(90deg, var(--clr-border), var(--clr-border) 10px, transparent 10px, transparent 20px),
         repeating-linear-gradient(180deg, var(--clr-border), var(--clr-border) 10px, transparent 10px, transparent 20px),
-        repeating-linear-gradient(270deg, var(--clr-border), var(--clr-border) 10px, transparent 10px, transparent 20px) ;
-    background-size: 3px calc(100% + 20px), calc(100% + 20px) 3px, 3px calc(100% + 20px) , calc(100% + 20px) 3px;
+        repeating-linear-gradient(270deg, var(--clr-border), var(--clr-border) 10px, transparent 10px, transparent 20px);
+    background-size: 3px calc(100% + 20px), calc(100% + 20px) 3px, 3px calc(100% + 20px), calc(100% + 20px) 3px;
     animation: boxBorderAnimation 1s infinite linear;
-}
 
-.box-hs {
-    white-space: normal;
-    display: flex;
-    margin-left: -400px;
-    flex-direction: column; 
-    align-items: center; 
-    background: #ff8601;
-    background-size: 3px calc(100% + 20px), calc(100% + 20px) 3px, 3px calc(100% + 20px) , calc(100% + 20px) 3px;
-    animation: boxBorderAnimation 1s infinite linear;
-}
+    @keyframes boxBorderAnimation {
+        from {
+            background-position: 0 0, -20px 0, 100% -20px, 0 100%;
+        }
 
-.s {
-    margin-left: -81px;
-}
-
-.h {
-    margin-left: -132px;
-}
-
-.bulb {
-    width: 100px;
-    margin-bottom: -1px;
-    float: left;
-    margin-left: -150px;
-}
-
-.pre {
-    color: white;
-    text-align: center;
-    margin-bottom: 49px;
-}
-
-.descr {
-    font-size: 12px;
-    color: white;
-    margin-top: -27px;
-}
-
-.boxs {
-    border-color: #ff8601;
-    margin-top: -220px;
-    margin-left: 100px;
-    background-color: #ff8601;
-}
-
-.commit {
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-
-.square {
-    margin-top: -60px;
-    height: 25px;
-    width: 25px;
-    margin-left: 1020px;
-    border-radius: 3px;
-    transform: rotate(45deg);
-    background-color: #ff5d8f;
-  }
-
-  .green {
-    margin-top: 56px;
-    height: 30px;
-    width: 25px;
-    margin-left: 1398px;
-    transform: rotate(45deg);
-    background-color: green;
-}
-
-.boxxs {
-        margin-left: 590px;
-        margin-top: -220px;
-}
-
-.comh {
-    font-size: 50px;
-    margin-left: 120px;
-    margin-top: 200px;
-}
-
-.is {
-    width: 200px;
+        to {
+            background-position: 0 -20px, 0 0, 100% 0, -20px 100%;
+        }
+    }
 }
