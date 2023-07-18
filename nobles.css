@@ -73,6 +73,7 @@ html {
 /* Page Content */
 .container {
     padding: 0 11rem;
+    font-size: 20px;
 }
 
 .main-content p {
