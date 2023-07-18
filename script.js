@@ -24,33 +24,13 @@ document.onkeydown = (e) => {
 
 
 
-document.querySelector("#close").addEventListener("click", function() {
-  hidePopup();
+document.querySelector("#close").addEventListener("click", function(){
+  document.querySelector(".popup").style.display = "none";
 });
 
 document.getElementById("rounded").onclick = function() {
-  hidePopup();
-};
-
-// Function to show the popup
-function showPopup() {
-  document.getElementById("pop").classList.add("visible");
+  document.getElementById("pop").style.display = "none";
 }
-
-// Function to hide the popup
-function hidePopup() {
-  document.querySelector(".popup").classList.add("hide-animation");
-  setTimeout(function() {
-      document.getElementById("pop").style.display = "none";
-      document.querySelector(".popup").classList.remove("hide-animation");
-  }, 300); // Wait for 300ms for the animation to complete before hiding the popup
-}
-
-// Show the popup when the page loads
-showPopup();
-
-// Show the popup after 7 seconds
-setTimeout(hidePopup, 7000);
 
 
 
