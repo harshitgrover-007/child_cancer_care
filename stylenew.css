@@ -47,40 +47,122 @@ html {
 }
 
 
-.popup p{
-    font-size: 14px;
-    text-align: justify;
-    margin: 20px 0;
-    line-height: 25px;
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
 
-.popup {
+.contentBox {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
     background-color: #ff5d8f;
-    width: 450px;
-    padding: 30px 40px;
+}
+
+.contentBox .imgBx {
+    position: relative;
+    width: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 195px;
+    top: 42px;
+}
+
+.close {
     position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-    border-radius: 8px;
-    font-family: "Poppins",sans-serif;
-    display: none;
-    text-align: center;
-    color: white;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #f3f3f3 url(cross.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 10;
 }
-.popup .opp{
-    display: block;
-    margin:  0 0 20px auto;
-    background-color: transparent;
-    font-size: 30px;
-    color: #c5c5c5;
-    border: none;
-    outline: none;
-    cursor: pointer;
+
+.contentBox .imgBx::before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #e7ffe0; 
+    border-radius: 50%;
 }
+
+.contentBox .imgBx img {
+    position: relative;
+    max-width: 250px;
+    z-index: 1;
+}
+
+.contentBox .content {
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fcwr {
+    font-size: 20px;
+    top: 257px;
+    position: relative;
+    min-width: 216%;
+    left: 6px;
+}
+
 
 .sub {
     font-size: 19px;
+}
+
+.merg {
+    padding: 20px;
+    border-radius: 40px;
+    top: 204px;
+    position: relative;
+    width: 150%;
+    left: -62px;
+    text-transform: lowercase;
+}
+
+.subbtn {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 18px;
+    border-radius: 50px;
+    margin-top: -59px;
+    position: absolute;
+    margin-left: 283px;
+    top: 465px;
+}
+
+.fa.fa-times {
+    font-size: 3em;
+    left: 354px;
+    position: relative;
+    top: 20px;
+}
+
+.subbtn:hover {
+    color: black;
+    background-color: lightskyblue;
+}
+
+.dfreegf {
+    position: relative;
+    top: 240px;
 }
 
 .intbtn {
@@ -188,6 +270,7 @@ nav .mainMenu .closeMenu , .icons i {
 } 
 
 @media (max-width: 800px) {
+
     .s2-container {
         flex-direction: column;
         align-items: center;
@@ -295,7 +378,7 @@ nav .mainMenu .closeMenu , .icons i {
   @media (max-width: 800px) {
     .program {
       white-space: normal; 
-      margin-left: -49px;
+      margin-left: -73px;
     }
   }
 
@@ -311,7 +394,7 @@ nav .mainMenu .closeMenu , .icons i {
         bottom: -245px;
     }
     .diagonal {
-        width: 500px;
+        width: 553px;
     }
     .boxs-h {
         margin-left: -400px;
@@ -327,7 +410,7 @@ nav .mainMenu .closeMenu , .icons i {
     }
     .sdfv.box-h {
       position: relative; 
-      margin-left: 0; 
+      margin-left: -37px; 
     }
     .boxss {
       margin-left: 0;
@@ -340,6 +423,7 @@ nav .mainMenu .closeMenu , .icons i {
     .box {
         margin-top: 20px; 
         width: 80%; 
+        margin-right: 232px;
     }
 
     .box-h,
@@ -366,19 +450,21 @@ nav .mainMenu .closeMenu , .icons i {
     
     .scie.boxs {
       margin-top: 20px;
-      margin-left: 0;
+      margin-left: -39px;
     }
 
     .comh {
         margin-bottom: -63px;
         position: relative;
         top: -280px;
+        left: -67px;
     }
 
     .comp {
         margin-bottom: -252px;
         top: -204px;
         position: relative;
+        left: -67px;
     }
     .shape {
         margin-left: -20px;
@@ -387,12 +473,31 @@ nav .mainMenu .closeMenu , .icons i {
         box-sizing: border-box;
         position: relative;
         top: 413px;
+        max-width: 392px;
+        max-height: 401px;
     }
     .spex {
         position: relative;
         float: right;
         top: 434px;
-        left: 103px;
+        left: 28px;
+    }
+    .ds {
+        left: -57px;
+        position: relative;
+        top: 20px;
+    }
+    .den {
+        visibility: hidden;
+    }
+    .ndv {
+        display: flex;
+        top: 140px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        flex-direction: column;
+        left: -99px;
     }
     .green {
         margin-left: -20px;
@@ -493,6 +598,9 @@ nav .mainMenu .closeMenu , .icons i {
     .custom-shape-divider-bottom-1689359892 {
         visibility: hidden;
     }
+    .desc {
+        margin-left: -41px;
+    }
 
     .intro {
         margin-left: 20px;
@@ -534,9 +642,34 @@ nav .mainMenu .closeMenu , .icons i {
     margin-top: 20px;
 }
 
+
+
 @media screen and (max-width: 800px) {
+    * {
+        animation: none !important;
+        transition: none !important;
+      }
     .boy {
         margin-top: 10px; 
+    }
+    .custom-shape-divider-bottom-1689575378 {
+        position: relative;
+        margin-top: 20px;
+    }
+    .custom-shape-divider-bottom-1689575378 {
+        visibility: hidden;
+    }
+    .footer {
+        box-sizing: border-box;
+        margin-bottom: 123px;
+        top: 473px;
+        position: relative;
+        min-height: 496px;
+    }
+    .ksjdc {
+        right: 128px;
+        position: relative;
+        width: 90%;
     }
 }
 
