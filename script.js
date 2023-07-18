@@ -22,32 +22,7 @@ document.onkeydown = (e) => {
 };
 
 
-function validateBtn() {
-  // Get the value entered in the email input
-  var email = document.getElementById("emailInput").value;
 
-  // Check if the email is empty or contains only spaces
-  if (email.trim() === "") {
-    alert("Email is required.");
-  } else {
-    // Here, you can add the logic to submit the email or perform other actions
-    // For example, you could call a function to handle the email submission.
-    // handleEmailSubmission(email);
-  }
-}
-
-const popup = document.querySelector('.popup');
-const close = document.querySelector('.close');
-
-  window.onload = function() {
-    setTimeout(function(){
-      popup.style.display = "block";
-    }, 5000)
-  }
-
-  close.addEventListener('click', () => {
-    popup.style.display = "none";
-  })
 
 
 
