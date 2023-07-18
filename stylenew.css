@@ -490,6 +490,9 @@ nav .mainMenu .closeMenu , .icons i {
         overflow: hidden;
         line-height: 0;
     }
+    .custom-shape-divider-bottom-1689359892 {
+        visibility: hidden;
+    }
 
     .intro {
         margin-left: 20px;
