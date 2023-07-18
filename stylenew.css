@@ -188,6 +188,48 @@ nav .mainMenu .closeMenu , .icons i {
 } 
 
 @media (max-width: 800px) {
+    .s2-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .seedce {
+        margin-left: -117px;
+        left: 73px;
+        position: relative;
+    }
+    .meet {
+        margin-left: -122px;
+        left: 73px;
+        position: relative;
+    }
+    .stoer {
+        font-size: 19px;
+        margin-left: 37px;
+        left: 61px;
+        position: relative;
+    }
+    .qedn {
+        font-size: 19px;
+        margin-left: 37px;
+        left: 61px;
+        position: relative;
+    }
+    .mervnfe {
+        font-size: 19px;
+        margin-left: 37px;
+        left: 61px;
+        position: relative;
+    }
+    .sdjiwf {
+        margin-left: -122px;
+        left: 73px;
+        position: relative;
+    }
     nav .mainMenu {
         height: 100vh;
         position: fixed;
