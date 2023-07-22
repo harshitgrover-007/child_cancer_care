@@ -313,6 +313,11 @@ nav .mainMenu .closeMenu , .icons i {
         left: 73px;
         position: relative;
     }
+
+    .abog {
+        margin-left: -1068px;
+    }
+
     nav .mainMenu {
         height: 100vh;
         position: fixed;
@@ -320,7 +325,7 @@ nav .mainMenu .closeMenu , .icons i {
         right: 0;
         left: 0;
         z-index: 10;
-        margin-left: -100px;
+        margin-left: -80px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -333,7 +338,7 @@ nav .mainMenu .closeMenu , .icons i {
         display: block;
         position: absolute;
         top: 20px;
-        right: 20px;
+        right: -20px;
     }
 
     nav .openMenu {
