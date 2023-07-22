@@ -209,6 +209,7 @@ html {
 .logo {
     display: block;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 nav {
@@ -335,14 +336,16 @@ nav .mainMenu .closeMenu , .icons i {
     }
 
     nav .mainMenu .closeMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: -20px;
+        display: flex;
+        position: relative;
+        top: -407px;
+        right: 396px;
     }
 
     nav .openMenu {
-        display: block;
+        display: flex;
+        right: -288px;
+        position: relative;
     }
 
     nav .mainMenu li a:hover {
